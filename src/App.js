@@ -30,6 +30,7 @@ function withLayout(WrappedComponent, hasDarkTopBar) {
 }
 
 class App extends Component {
+  
   Loader = () => {
     return (
       <div id="preloader">
@@ -42,7 +43,17 @@ class App extends Component {
       </div>
     );
   };
+  
   render() {
+    const myStyle={
+      backgroundImage: 
+"url('https://media.geeksforgeeks.org/wp-content/uploads/rk.png')",
+      height:'100vh',
+      marginTop:'-70px',
+      fontSize:'50px',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+  };
     return (
       <React.Fragment>
         <Router>

@@ -23,7 +23,7 @@ export default class Cta extends Component {
                                     <Form>
                                         <div className="mb-2">
                                             <Input type="email" id="email" name="email" className="rounded-pill" placeholder="E-mail :" />
-                                            <Button type="submit" className="btn btn-pills btn-primary">Subscribe</Button>
+                                            <Button type="submit" className="btn btn-pills btn-success">Subscribe</Button>
                                         </div>
                                     </Form>
                                 </div>

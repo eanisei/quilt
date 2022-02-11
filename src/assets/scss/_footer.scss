@@ -2,7 +2,7 @@
 // footer.scss
 //
 .footer {
-  background: $footer;
+  background: #00CC99;
   padding: 60px 0;
   position: relative;
   color: $gray-500;
@@ -11,6 +11,9 @@
     &:focus {
       outline: none;
     }
+    .footer-bar {
+        border-top: 1px solid #283353;
+    }
   }
   .footer-head {
     letter-spacing: 1px;
@@ -18,8 +21,8 @@
   }
   .foot-subscribe {
     .form-control {
-      background-color: lighten($black, 10%);
-      border: 1px solid lighten($black, 10%);
+      background-color: #00CC99;
+      border: 1px solid #00CC99;
       color: $light;
       &:focus {
         box-shadow: none;

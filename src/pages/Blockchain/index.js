@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-
 import Section from './Section';
+import bg from '../../assets/images/crypto/bg.svg';
 import ModernBlockchain from './ModernBlockchain';
 import Team from './Team';
 import { Container, Row, Col } from 'reactstrap';
@@ -12,7 +12,6 @@ import client3 from "../../assets/images/client/lenovo.svg";
 import client4 from "../../assets/images/client/paypal.svg";
 import client5 from "../../assets/images/client/shopify.svg";
 import client6 from "../../assets/images/client/spotify.svg";
-import Cta from './Cta';
 export default class index extends Component {
     constructor(props) {
         super(props);
@@ -30,7 +29,7 @@ export default class index extends Component {
     componentDidMount() {
         document.body.classList = "";
         document.getElementById("top-menu").classList.add("nav-light");
-        document.getElementById("buyButton").className = "btn btn-light";
+        document.getElementById("buyButton").className = "btn btn-success";
         window.addEventListener("scroll", this.scrollNavigation, true);
     }
     // Make sure to remove the DOM listener when the component is unmounted.
@@ -43,43 +42,20 @@ export default class index extends Component {
         var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
         if (top > 80) {
             document.getElementById("topnav").classList.add("nav-sticky");
-            document.getElementById("buyButton").className = "btn btn-primary";
+            document.getElementById("buyButton").className = "btn btn-success";
         } else {
             document.getElementById("topnav").classList.remove("nav-sticky");
-            document.getElementById("buyButton").className = "btn btn-light";
+            document.getElementById("buyButton").className = "btn btn-success";
         }
     };
     render() {
         return (
-            <React.Fragment>
+            <React.Fragment >                
                 <Section />
                 <section className="section">
                     <Team />
-                    <ModernBlockchain />
+                    <ModernBlockchain />    
                 </section>
-                <section className="py-4 border-bottom border-top">
-                    <Container>
-                        {/* partners */}
-                        <Row className="justify-content-center">
-                            {this.state.partners.map((partner, key) => (
-                                <Col
-                                    lg={2}
-                                    md={2}
-                                    xs={6}
-                                    key={key}
-                                    className="text-center py-4"
-                                >
-                                    <img
-                                        src={partner.image}
-                                        className="avatar avatar-ex-sm"
-                                        alt="Landrick"
-                                    />
-                                </Col>
-                            ))}
-                        </Row>
-                    </Container>
-                </section>
-                <Cta />
             </React.Fragment>
         )
     }

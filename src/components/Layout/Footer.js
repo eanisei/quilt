@@ -1,20 +1,14 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Container, Row, Col, Form, Input, Label } from "reactstrap";
+import { Container, Row, Col, Form, Input, Label, Button } from "reactstrap";
 
 //Import Icons
 import FeatherIcon from "feather-icons-react";
 
-// import images
-import americanEx from "../../assets/images/payments/american-ex.png";
-import discover from "../../assets/images/payments/discover.png";
-import masterCard from "../../assets/images/payments/master-card.png";
-import paypal from "../../assets/images/payments/paypal.png";
-import visa from "../../assets/images/payments/visa.png";
 
 //Import Images
-import logolight from "../../assets/images/logo-light.png";
-import logodark from "../../assets/images/logo-dark.png";
+import logolight from "../../assets/images/crypto/Quilt.svg";
+import logodark from "../../assets/images/crypto/Quilt.svg";
 
 class Footer extends Component {
   constructor(props) {
@@ -47,22 +41,24 @@ class Footer extends Component {
           <Container>
             <Row>
               <Col
-                lg="4"
+                lg="6"
                 xs="12"
                 className="mb-0 mb-md-4 pb-0 pb-md-2"
                 name="footercolumn"
               >
-                <Link to="#" className="logo-footer">
-                  <img
-                    src={this.props.isLight ? logodark : logolight}
-                    height="24"
-                    alt=""
-                  />
-                </Link>
+                <h5
+                  className={
+                    this.props.isLight
+                      ? "text-dark footer-head"
+                      : "text-light footer-head"
+                  }
+                >
+                  Sign up for the Updates
+                </h5>
                 <p className={this.props.isLight ? "mt-4 text-muted" : "mt-4"}>
-                  Start working with Landrick that can provide everything you
-                  need to generate awareness, drive traffic, connect.
+                We'll send you fresh news about our platform, including new features and opportunities for the community.
                 </p>
+
                 <ul className={this.props.isLight ? "list-unstyled social-icon social mb-0 m t-4" : "list-unstyled social-icon foot-social-icon mb-0 mt-4"}>
                   <li className="list-inline-item me-1">
                     <Link to="" className="rounded">
@@ -99,9 +95,47 @@ class Footer extends Component {
                 </ul>
               </Col>
 
+  
+
               <Col
-                lg="2"
-                md="4"
+                lg="6"
+                md="6"
+                xs="12"
+                className="mt-4 mt-sm-0 pt-2 pt-sm-0"
+                name="footercolumn"
+              >
+<div className="subcribe-form mt-4">
+                                    <Form>
+                                        <div className="mb-2">
+                                            <Input type="email" id="email" name="email" className="rounded-pill" placeholder="E-mail :" />
+                                            <Button type="submit" className="btn btn-pills btn-success">Subscribe</Button>
+                                        </div>
+                                    </Form>
+                                </div>
+                
+              </Col>
+            </Row>
+            <Row>    
+            <Col
+                lg="6"
+                md="6"
+                xs="12"
+                className="mt-4 mt-sm-0 pt-2 pt-sm-0"
+                name="footercolumn"
+              >
+               
+               <Link to="#" className="logo-footer">
+                  <img
+                    src={this.props.isLight ? logodark : logolight}
+                    height="24"
+                    alt=""
+                  />
+                </Link> 
+
+              </Col>     
+                 <Col
+                lg="3"
+                md="3"
                 xs="12"
                 className="mt-4 mt-sm-0 pt-2 pt-sm-0"
                 name="footercolumn"
@@ -113,7 +147,7 @@ class Footer extends Component {
                       : "text-light footer-head"
                   }
                 >
-                  Company
+                  App
                 </h5>
                 <ul className="list-unstyled footer-list mt-4">
                   {this.state.grid1.map((grid, key) => (
@@ -134,7 +168,7 @@ class Footer extends Component {
 
               <Col
                 lg="3"
-                md="4"
+                md="3"
                 xs="12"
                 className="mt-4 mt-sm-0 pt-2 pt-sm-0"
                 name="footercolumn"
@@ -146,7 +180,7 @@ class Footer extends Component {
                       : "text-light footer-head"
                   }
                 >
-                  Usefull Links
+                  Navigation
                 </h5>
                 <ul className="list-unstyled footer-list mt-4">
                   {this.state.grid2.map((grid, key) => (
@@ -164,155 +198,20 @@ class Footer extends Component {
                   ))}
                 </ul>
               </Col>
-
-              <Col
-                lg="3"
-                md="4"
-                xs="12"
-                className="mt-4 mt-sm-0 pt-2 pt-sm-0"
-                name="footercolumn"
-              >
-                <h5
-                  className={
-                    this.props.isLight
-                      ? "text-dark footer-head"
-                      : "text-light footer-head"
-                  }
-                >
-                  Newsletter
-                </h5>
-                <p className="mt-4">
-                  Sign up and receive the latest tips via email.
-                </p>
-                <Form>
-                  <Row>
-                    <Col lg="12">
-                      <div
-                        className={
-                          this.props.isLight
-                            ? "foot-subscribe mb-3 foot-white"
-                            : "foot-subscribe mb-3"
-                        }
-                      >
-                        <Label
-                          className={this.props.isLight ? "form-label text-muted" : "form-label"}
-                        >
-                          Write your email{" "}
-                          <span className="text-danger">*</span>
-                        </Label>
-                        <div className="form-icon position-relative">
-                          <FeatherIcon
-                            icon="mail"
-                            className="fea icon-sm icons"
-                          />
-                        </div>
-                        <Input
-                          type="email"
-                          name="email"
-                          id="emailsubscribe"
-                          className={
-                            this.props.isLight
-                              ? "ps-5 rounded bg-light border"
-                              : "ps-5 rounded"
-                          }
-                          placeholder="Your email : "
-                          required
-                        />
-                      </div>
-                    </Col>
-                    <Col lg="12">
-                      <div className="d-grid">
-                        <Input
-                          type="submit"
-                          id="submitsubscribefooter"
-                          name="send"
-                          className="btn btn-primary"
-                          readOnly
-                          value="Subscribe"
-                        />
-                      </div>
-                    </Col>
-                  </Row>
-                </Form>
-              </Col>
-            </Row>
+              </Row>
           </Container>
         </footer>
         <footer className="footer footer-bar">
           <Container className="text-center">
             <Row className="align-items-center">
-              <Col sm="6">
+              <Col sm="8">
                 <div className="text-sm-start">
                   <p className="mb-0">
-                    © 2020-21 Landrick. Develop by{" "}
-                    <i className="mdi mdi-heart text-danger"></i>{" "}
-                    <a
-                      href="https://themesbrand.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-reset"
-                    >
-                      Themesbrand
-                    </a>
-                    .
+                    © 2022 quilt.
                   </p>
                 </div>
               </Col>
 
-              <Col sm="6" className="mt-4 mt-sm-0 pt-2 pt-sm-0">
-                <ul className="list-unstyled text-sm-end mb-0">
-                  <li className="list-inline-item me-1">
-                    <Link to="">
-                      <img
-                        src={americanEx}
-                        className="avatar avatar-ex-sm"
-                        title="American Express"
-                        alt=""
-                      />
-                    </Link>
-                  </li>
-                  <li className="list-inline-item me-1">
-                    <Link to="">
-                      <img
-                        src={discover}
-                        className="avatar avatar-ex-sm"
-                        title="Discover"
-                        alt=""
-                      />
-                    </Link>
-                  </li>
-                  <li className="list-inline-item me-1">
-                    <Link to="">
-                      <img
-                        src={masterCard}
-                        className="avatar avatar-ex-sm"
-                        title="Master Card"
-                        alt=""
-                      />
-                    </Link>
-                  </li>
-                  <li className="list-inline-item me-1">
-                    <Link to="">
-                      <img
-                        src={paypal}
-                        className="avatar avatar-ex-sm"
-                        title="Paypal"
-                        alt=""
-                      />
-                    </Link>
-                  </li>
-                  <li className="list-inline-item me-1">
-                    <Link to="">
-                      <img
-                        src={visa}
-                        className="avatar avatar-ex-sm"
-                        title="Visa"
-                        alt=""
-                      />
-                    </Link>
-                  </li>
-                </ul>
-              </Col>
             </Row>
           </Container>
         </footer>

@@ -13,8 +13,8 @@ import {
 } from "reactstrap";
 
 //Import images
-import logodark from "../../assets/images/logo-dark.png";
-import logolight from "../../assets/images/logo-light.png";
+import logodark from "../../assets/images/crypto/Quilt.svg";
+import logolight from "../../assets/images/crypto/Quilt.svg";
 import shop1 from "../../assets/images/shop/product/s-1.jpg";
 import shop2 from "../../assets/images/shop/product/s-2.jpg";
 import shop3 from "../../assets/images/shop/product/s-3.jpg";
@@ -649,7 +649,7 @@ class Topbar extends Component {
                       >
                         <DropdownToggle
                           type="button"
-                          className="btn btn-icon btn-primary "
+                          className="btn btn-icon btn-success btn-pills"
                         >
                           <i className="uil uil-shopping-cart align-middle icons"></i>
                         </DropdownToggle>
@@ -714,10 +714,10 @@ class Topbar extends Component {
                           </div>
 
                           <div className="mt-3 text-center">
-                            <Link to="#" className="btn btn-primary me-2">
+                            <Link to="#" className="btn btn-success me-2">
                               View Cart
                             </Link>
-                            <Link to="#" className="btn btn-primary">
+                            <Link to="#" className="btn btn-success">
                               Checkout
                             </Link>
                           </div>
@@ -730,7 +730,7 @@ class Topbar extends Component {
                     <li className="list-inline-item mb-0 pe-1">
                       <Link
                         to="#"
-                        className="btn btn-icon btn-primary"
+                        className="btn btn-icon btn-success btn-pills"
                         onClick={this.toggleWishlistModal}
                       >
                         <i className="uil uil-heart align-middle icons"></i>
@@ -738,14 +738,14 @@ class Topbar extends Component {
                     </li>
                     <li className="list-inline-item mb-0">
                       <Dropdown
-                        color="primary"
+                        color="success"
                         isOpen={this.state.dropdownIsOpen}
                         toggle={this.toggleDropdownIsOpen}
                       >
                         <DropdownToggle
                           type="button"
-                          // color="primary"
-                          className="btn btn-icon btn-primary"
+                          // color="success"
+                          className="btn btn-icon btn-success btn-pills"
                         >
                           <i className="uil uil-user align-middle icons"></i>
                         </DropdownToggle>
@@ -792,16 +792,16 @@ class Topbar extends Component {
                       </UncontrolledDropdown>
                     </li>
                     <li className="list-inline-item mb-0">
-                      <Link to="#" className="btn btn-icon btn-primary me-1"><i className="uil uil-facebook-f icons"></i></Link>
+                      <Link to="#" className="btn btn-icon btn-success me-1"><i className="uil uil-facebook-f icons"></i></Link>
                     </li>
                     <li className="list-inline-item mb-0">
-                      <Link to="#" className="btn btn-icon btn-primary me-1"><i className="uil uil-github icons"></i></Link>
+                      <Link to="#" className="btn btn-icon btn-success me-1"><i className="uil uil-github icons"></i></Link>
                     </li>
                     <li className="list-inline-item mb-0">
-                      <Link to="#" className="btn btn-icon btn-primary me-1"><i className="uil uil-twitter icons"></i></Link>
+                      <Link to="#" className="btn btn-icon btn-success me-1"><i className="uil uil-twitter icons"></i></Link>
                     </li>
                     <li className="list-inline-item mb-0">
-                      <Link to="#" className="btn btn-icon btn-primary me-1"><i className="uil uil-linkedin-alt icons"></i></Link>
+                      <Link to="#" className="btn btn-icon btn-success me-1"><i className="uil uil-linkedin-alt icons"></i></Link>
                     </li>
                   </ul>
                 );
@@ -850,7 +850,7 @@ class Topbar extends Component {
                       >
                         <DropdownToggle
                           type="button"
-                          className="btn btn-icon btn-soft-primary "
+                          className="btn btn-icon btn-soft-success"
                         >
                           <i className="uil uil-shopping-cart align-middle icons"></i>
                         </DropdownToggle>
@@ -915,10 +915,10 @@ class Topbar extends Component {
                           </div>
 
                           <div className="mt-3 text-center">
-                            <Link to="#" className="btn btn-primary me-2">
+                            <Link to="#" className="btn btn-success me-2 btn-pills">
                               View Cart
                             </Link>
-                            <Link to="#" className="btn btn-primary">
+                            <Link to="#" className="btn btn-success btn-pills">
                               Checkout
                             </Link>
                           </div>
@@ -931,7 +931,7 @@ class Topbar extends Component {
                     <li className="list-inline-item mb-0 pe-1">
                       <Link
                         to="#"
-                        className="btn btn-icon btn-soft-primary"
+                        className="btn btn-icon btn-soft-success"
                         onClick={this.toggleWishlistModal}
                       >
                         <i className="uil uil-heart align-middle icons"></i>
@@ -939,13 +939,13 @@ class Topbar extends Component {
                     </li>
                     <li className="list-inline-item mb-0">
                       <Dropdown
-                        color="primary"
+                        color="success"
                         isOpen={this.state.dropdownIsOpen}
                         toggle={this.toggleDropdownIsOpen}
                       >
                         <DropdownToggle
                           type="button"
-                          className="btn btn-icon btn-soft-primary"
+                          className="btn btn-icon btn-soft-success"
                         >
                           <i className="uil uil-user align-middle icons"></i>
                         </DropdownToggle>
@@ -982,9 +982,9 @@ class Topbar extends Component {
                     <Link
                       to="//1.envato.market/landrickreactjs"
                       target="_blank"
-                      className="btn btn-pills btn-primary"
+                      className="btn btn-pills btn-success btn-pills"
                     >
-                      Buy Now
+                      Launch App
                     </Link>
                   </div>
                 );
@@ -996,9 +996,9 @@ class Topbar extends Component {
                       target="_blank"
                       rel="noopener noreferrer"
                       id="buyButton"
-                      className="btn btn-primary"
+                      className="btn btn-success btn-pills"
                     >
-                      Buy Now
+                      Launch App
                     </Link>
                   </div>
                 );
@@ -1241,9 +1241,9 @@ class Topbar extends Component {
                   to="https://1.envato.market/landrickreactjs"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-primary"
+                  className="btn btn-success pills"
                 >
-                  Buy Now
+                  Launch App
                 </Link>
               </div>
             </div>
@@ -1273,7 +1273,7 @@ class Topbar extends Component {
                   Create your first wishlist request...
                 </p>
                 <div className="mt-4">
-                  <Link to="#" className="btn btn-outline-primary">
+                  <Link to="#" className="btn btn-outline-success pills">
                     + Create new wishlist
                   </Link>
                 </div>

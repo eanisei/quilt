@@ -224,7 +224,7 @@ a.text-danger:hover, a.text-danger:focus {
 }
 
 .bg-dark {
-  background-color: #3c4858 !important;
+  background-color: #00CC99 !important;
 }
 
 .bg-soft-dark {
@@ -293,7 +293,7 @@ a.text-light:hover, a.text-light:focus {
 }
 
 .bg-blue {
-  background-color: #2f55d4 !important;
+  background-color: #00CC99 !important;
 }
 
 .bg-soft-blue {
@@ -2881,10 +2881,10 @@ p {
   height: 100vh;
   background-size: cover;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   position: relative;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -5110,7 +5110,7 @@ p {
 }
 
 .footer {
-  background: #202942;
+  background: #00CC99;
   padding: 60px 0;
   position: relative;
   color: #adb5bd;
@@ -5186,7 +5186,7 @@ p {
 }
 
 .footer.footer-border, .footer.footer-bar {
-  border-top: 1px solid #283353;
+  border-top: 1px solid #00CC99;
 }
 
 .footer.footer-bar {
