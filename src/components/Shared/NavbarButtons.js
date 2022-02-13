@@ -18,8 +18,6 @@ import { Link } from "react-router-dom";
 //Import Icons
 import FeatherIcon from "feather-icons-react";
 
-// import images
-import online from "../../assets/images/course/online/ab02.jpg";
 
 export default class NavbarButtons extends Component {
   constructor(props) {
@@ -106,7 +104,6 @@ export default class NavbarButtons extends Component {
             <Container fluid className="px-0">
               <Row className="align-items-center g-0">
                 <Col lg={6} md={5}>
-                  <img src={online} className="img-fluid" alt="" />
                 </Col>
 
                 <Col lg={6} md={7}>

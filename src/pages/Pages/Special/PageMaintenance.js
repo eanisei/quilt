@@ -6,10 +6,6 @@ import { Container, Row, Col } from "reactstrap";
 //Import Icons
 import FeatherIcon from "feather-icons-react";
 
-// import images
-import maintenanceImg from "../../../assets/images/maintenance.jpg";
-import logolight from "../../../assets/images/logo-light.png";
-
 //CountDown
 import Countdown from "react-countdown-now";
 
@@ -51,14 +47,12 @@ class PageMaintenance extends Component {
 
         <section
           className="bg-home d-flex align-items-center"
-          style={{ backgroundImage: `url(${maintenanceImg})` }}
         >
           <div className="bg-overlay"></div>
           <Container>
             <Row className="justify-content-center">
               <Col lg={8} md={12} className="text-center">
                 <Link to="#" className="logo h5">
-                  <img src={logolight} height="24" alt="" />
                 </Link>
                 <div className="text-uppercase text-white title-dark mt-2 mb-4 maintenance">
                   System Is Under Maintenance

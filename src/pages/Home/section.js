@@ -1,8 +1,8 @@
     import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import { Col, Container, Row } from 'reactstrap';
-import bg1 from '../../assets/images/crypto/bg1.svg';
-import quiltApp from '../../assets/images/crypto/quiltApp.svg';
+import bg1 from '../../assets/images/bg1.svg';
+import quiltApp from '../../assets/images/quiltApp.svg';
 
 export default class Section extends Component {
     render() {

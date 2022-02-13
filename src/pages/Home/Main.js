@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
 //import images
-import chatapp from '../../assets/images/crypto/chatapp.svg';
-import bg from '../../assets/images/crypto/bg.svg';
+import chatapp from '../../assets/images/chatapp.svg';
+import bg from '../../assets/images/bg.svg';
 import { Col, Container, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
 

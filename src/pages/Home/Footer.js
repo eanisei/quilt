@@ -4,8 +4,8 @@ import { Container, Row, Col, Form, Input, Button } from "reactstrap";
 import { Link } from "react-router-dom";
 
 //Import Images
-import logolight from "../../assets/images/crypto/Quilt.svg";
-import logodark from "../../assets/images/crypto/Quilt.svg";
+import logolight from "../../assets/images/Quilt.svg";
+import logodark from "../../assets/images/Quilt.svg";
 
 //Import Icons
 import FeatherIcon from "feather-icons-react";

@@ -3,7 +3,7 @@ import { Container } from "reactstrap";
 import { Link } from "react-router-dom";
 import ScrollspyNav from "./scrollSpy";
 
-import Quilt from "../../assets/images/crypto/Quilt.svg";
+import Quilt from "../../assets/images/Quilt.svg";
 
 class Topbar extends Component {
   constructor(props) {

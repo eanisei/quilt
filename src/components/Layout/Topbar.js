@@ -8,9 +8,8 @@ import {
 } from "reactstrap";
 
 //Import images
-import logodark from "../../assets/images/crypto/Quilt.svg";
-import logolight from "../../assets/images/crypto/Quilt.svg";
-import NavbarButtons from "../Shared/NavbarButtons";
+import logodark from "../../assets/images/Quilt.svg";
+import logolight from "../../assets/images/Quilt.svg";
 
 class Topbar extends Component {
   constructor(props) {
