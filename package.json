@@ -1,6 +1,6 @@
 {
-  "name": "landrick",
-  "version": "2.0.0",
+  "name": "quilt",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@iconscout/react-unicons": "^1.1.6",

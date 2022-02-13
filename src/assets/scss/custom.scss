@@ -68,11 +68,11 @@ a {
 }
 
 .indicator-inactive {
-  background-color: #2f55d4 !important;
+  background-color: #FFF7E8 !important;
   opacity: 0.6;
 }
 .indicator-active {
-  background-color: #2f55d4 !important;
+  background-color: #FFF7E8 !important;
   transform: rotate(45deg);
 }
 
@@ -87,14 +87,14 @@ a {
   bottom: 30px;
   transition: right 0.5s;
   cursor: pointer;
-  background-color: rgba(47, 85, 212, 0.2);
+  background-color: #2eca8b;
   padding: 5px;
   align-items: center;
   border-radius: 5px !important;
   outline: none;
 
   &:hover {
-    background-color: $primary !important;
+    background-color: #00CC99 !important;
     svg {
       stroke: $white !important;
     }
@@ -108,7 +108,7 @@ a {
     margin-top: 2px;
     margin-left: 5px;
     fill: none;
-    stroke: $primary !important;
+    stroke: $white !important;
   }
 }
 
@@ -132,7 +132,7 @@ a {
 /* Style your items */
 .my-masonry-grid_column > div {
   /* change div to reference your elements you put in <Masonry> */
-  background: grey;
+  background: #FFF7E8;
   margin-bottom: 30px;
 }
 
@@ -161,12 +161,12 @@ a {
 }
 .custom-dots {
   .indicator-active {
-    background-color: #2f55d4 !important;
+    background-color: #FFF7E8 !important;
   }
 }
 .custom-dots {
   .indicator-inactive {
-    background-color: #6486e4 !important;
+    background-color: #FFF7E8 !important;
   }
 }
 
@@ -197,5 +197,5 @@ a {
   }
 }
 .footer-border-bottom {
-  border-bottom: 1px solid #283353;
+  border-bottom: 1px solid #FFF7E8;
 }

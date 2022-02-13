@@ -74,7 +74,7 @@ class PageMaintenance extends Component {
               <Col md={12} className="text-center">
                 <div className="text-center">
                   <Countdown
-                    date={Date.now() + 1199658655000}
+                    date={Date.now()}
                     renderer={renderer}
                   />
                 </div>

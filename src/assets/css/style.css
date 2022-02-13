@@ -1,33 +1,4 @@
-/* Template Name: Landrick - Saas & Software Landing Page Template
-   Author: Themesbrand
-   E-mail: support@themesbrand.com
-   Created: August 2019
-   Version: 3.1.0
-   Updated: March 2021
-   File Description: Main Css file of the template
-*/
-/*********************************/
-/*         INDEX                 */
-/*================================
- *     01.  Variables            *
- *     02.  Bootstrap Custom     *
- *     03.  Components           *
- *     04.  General              *
- *     05.  Helper               *
- *     06.  Menu                 *
- *     07.  Home / Landing       *
- *     08.  Features / Services  *
- *     09.  Testimonial          *
- *     10.  Price                *
- *     11.  C.T.A                *
- *     12.  Blog / Careers / Job *
- *     13.  Work / Projects      *
- *     14.  Team                 *
- *     15.  User Pages           *
- *     16.  Countdown            *
- *     17.  Contact              *
- *     18.  Footer               *
- ================================*/
+
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;600;700&display=swap");
 @media (min-width: 1400px) {
@@ -43,7 +14,7 @@ body {
   font-family: "Nunito", sans-serif;
   overflow-x: hidden !important;
   font-size: 16px;
-  background: #FFF7E8;
+  background: #FFF7E8 !important;
 }
 h1, .h1 {
   font-size: 42px !important;
@@ -249,7 +220,9 @@ a.text-dark:hover, a.text-dark:focus {
 .bg-muted {
   background-color: #8492a6 !important;
 }
-
+.para-desc {
+  display: none;
+}
 .bg-soft-muted {
   background-color: rgba(132, 146, 166, 0.1) !important;
   border: 1px solid rgba(132, 146, 166, 0.1) !important;
@@ -326,7 +299,7 @@ a.text-blue:hover, a.text-blue:focus {
 }
 
 .text-footer {
-  color: #202942 !important;
+  color: #fff !important;
 }
 
 a {
@@ -335,7 +308,7 @@ a {
 }
 
 a.text-footer:hover, a.text-footer:focus {
-  color: #181e30 !important;
+  color: #fff !important;
 }
 
 .d-flex .flex-1 {
@@ -1902,13 +1875,13 @@ p {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 0 0 100px 0;
   position: relative;
 }
 
 @media (max-width: 768px) {
   .section {
-    padding: 60px 0;
+    padding: 0 0 60px 0;
   }
 }
 
@@ -2883,7 +2856,7 @@ p {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  position: relative;
+  position: absolute;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -5111,11 +5084,13 @@ p {
 
 .footer {
   background: #00CC99;
+  color: #fff;
   padding: 60px 0;
   position: relative;
-  color: #adb5bd;
 }
-
+.footer.footer-bar {
+  border-top: none !important;
+}
 .footer .logo-footer {
   font-size: 22px;
 }
@@ -5161,7 +5136,7 @@ p {
 }
 
 .footer .text-foot {
-  color: #adb5bd;
+  color: #fff;
 }
 
 .footer .footer-list {

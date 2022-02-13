@@ -9,15 +9,14 @@ import {
 
 // Import Css
 import "./assets/css/materialdesignicons.min.css";
+import "./assets/css/style.css";
 import "./Apps.scss";
-
-import "./assets/css/colors/default.css";
+import "./assets/css/colors/green.css";
 
 // Include Routes
 import routes from "./routes";
 
 function withLayout(WrappedComponent, hasDarkTopBar) {
-  // ...and returns another component...
   return class extends React.Component {
     render() {
       return (
@@ -45,15 +44,6 @@ class App extends Component {
   };
   
   render() {
-    const myStyle={
-      backgroundImage: 
-"url('https://media.geeksforgeeks.org/wp-content/uploads/rk.png')",
-      height:'100vh',
-      marginTop:'-70px',
-      fontSize:'50px',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-  };
     return (
       <React.Fragment>
         <Router>

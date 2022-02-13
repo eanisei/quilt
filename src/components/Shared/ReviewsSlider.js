@@ -28,7 +28,6 @@ class ReviewsSlider extends Component {
     this.updateWindowSize();
   }
 
-  // Make sure to remove the DOM listener when the component is unmounted.
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateWindowSize);
   }

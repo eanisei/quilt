@@ -3,17 +3,16 @@ import { Container } from "reactstrap";
 import { Link } from "react-router-dom";
 import ScrollspyNav from "./scrollSpy";
 
-//Import Images
-import logodark from "../../assets/images/logo-dark.png";
+import Quilt from "../../assets/images/crypto/Quilt.svg";
 
 class Topbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
       navItems: [
-        { id: 1, idnm: "home", navheading: "Home" },
-        { id: 2, idnm: "demos", navheading: "Demos" },
-        { id: 3, idnm: "features", navheading: "Feature" },
+        { id: 1, idnm: "about", navheading: "About" },
+        { id: 2, idnm: "roadmap", navheading: "Roadmap" },
+        { id: 3, idnm: "team", navheading: "Team" },
       ],
       isOpen: false,
     };
@@ -25,7 +24,6 @@ class Topbar extends Component {
   }
 
   render() {
-    //Store all Navigationbar Id into TargetID variable(Used for Scrollspy)
     let targetId = this.state.navItems.map((item) => {
       return item.idnm;
     });
@@ -34,16 +32,16 @@ class Topbar extends Component {
         <header id="topnav" className="defaultscroll sticky">
           <Container>
             <Link className="logo" to="/">
-              <img src={logodark} height="24" alt="" />
+              <img src={Quilt} height="24" alt="" />
             </Link>
             <div className="buy-button">
               <a
-                href="https://1.envato.market/landrickreactjs"
+                href="https://quilt.chat"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-primary"
+                className="btn btn-success btn-pills"
               >
-                Download
+                Launch App
               </a>
             </div>
             <div className="menu-extras">

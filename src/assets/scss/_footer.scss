@@ -3,16 +3,17 @@
 //
 .footer {
   background: #00CC99;
+  color: #fff;
   padding: 60px 0;
   position: relative;
-  color: $gray-500;
+  color: #fff;
   .logo-footer {
     font-size: 22px;
     &:focus {
       outline: none;
     }
     .footer-bar {
-        border-top: 1px solid #283353;
+        border-top: 1px solid #fff;
     }
   }
   .footer-head {
@@ -40,7 +41,7 @@
     }
   }
   .text-foot {
-    color: $gray-500;
+    color: #fff;
   }
   .footer-list {
     margin-bottom: 0;

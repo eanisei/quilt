@@ -55,7 +55,7 @@ class Footer extends Component {
                 >
                   Sign up for the Updates
                 </h5>
-                <p className={this.props.isLight ? "mt-4 text-muted" : "mt-4"}>
+                <p className={this.props.isLight ? "mt-4 text-light" : "mt-4"}>
                 We'll send you fresh news about our platform, including new features and opportunities for the community.
                 </p>
 
@@ -64,7 +64,7 @@ class Footer extends Component {
                     <Link to="" className="rounded">
                       <FeatherIcon
                         icon="facebook"
-                        className="fea icon-sm fea-social"
+                        className="fea icon-sm fea-social text-light"
                       />
                     </Link>
                   </li>
@@ -72,7 +72,7 @@ class Footer extends Component {
                     <Link to="" className="rounded">
                       <FeatherIcon
                         icon="instagram"
-                        className="fea icon-sm fea-social"
+                        className="fea icon-sm fea-social text-light"
                       />
                     </Link>
                   </li>
@@ -80,7 +80,7 @@ class Footer extends Component {
                     <Link to="" className="rounded">
                       <FeatherIcon
                         icon="twitter"
-                        className="fea icon-sm fea-social"
+                        className="fea icon-sm fea-social text-light"
                       />
                     </Link>
                   </li>
@@ -88,7 +88,7 @@ class Footer extends Component {
                     <Link to="" className="rounded">
                       <FeatherIcon
                         icon="linkedin"
-                        className="fea icon-sm fea-social"
+                        className="fea icon-sm fea-social text-light"
                       />
                     </Link>
                   </li>
@@ -104,7 +104,7 @@ class Footer extends Component {
                 className="mt-4 mt-sm-0 pt-2 pt-sm-0"
                 name="footercolumn"
               >
-<div className="subcribe-form mt-4">
+                  <div className="subcribe-form mt-4">
                                     <Form>
                                         <div className="mb-2">
                                             <Input type="email" id="email" name="email" className="rounded-pill" placeholder="E-mail :" />
@@ -155,7 +155,7 @@ class Footer extends Component {
                       <Link
                         to={grid.link}
                         className={
-                          this.props.isLight ? "text-muted" : "text-foot"
+                          this.props.isLight ? "text-light" : "text-foot"
                         }
                       >
                         <i className="mdi mdi-chevron-right me-1"></i>{" "}
@@ -188,10 +188,10 @@ class Footer extends Component {
                       <Link
                         to={grid.link}
                         className={
-                          this.props.isLight ? "text-muted" : "text-foot"
+                          this.props.isLight ? "text-light" : "text-foot"
                         }
                       >
-                        <i className="mdi mdi-chevron-right me-1"></i>
+                        <i className="mdi mdi-chevron-right me-1 text-light"></i>
                         {grid.title}
                       </Link>
                     </li>
@@ -205,8 +205,8 @@ class Footer extends Component {
           <Container className="text-center">
             <Row className="align-items-center">
               <Col sm="8">
-                <div className="text-sm-start">
-                  <p className="mb-0">
+                <div className="text-sm-start text-light">
+                  <p className="mb-0 text-center">
                     © 2022 quilt.
                   </p>
                 </div>

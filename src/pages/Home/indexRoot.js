@@ -1,5 +1,8 @@
 // React basic and bootstrap
 import React, { Component, Suspense } from 'react';
+import Section from './Section';
+import GettingStarted from './GettingStarted';
+import Main from './Main';
 
 // Scroll up button
 import ScrollUpButton from "react-scroll-up-button";
@@ -7,15 +10,9 @@ import ScrollUpButton from "react-scroll-up-button";
 //Import Icons
 import FeatherIcon from 'feather-icons-react';
 
-// Import css
-import "./css/demo.css";
 
 // Import sub components
 const Topbar = React.lazy(() => import('./Topbar'));
-const Home = React.lazy(() => import('./Home'));
-const Demo = React.lazy(() => import('./Demo'));
-const Feature = React.lazy(() => import('./Feature'));
-const Reviews = React.lazy(() => import('./Reviews'));
 const Footer = React.lazy(() => import('./Footer'));
 
 const CustomDot = () => {
@@ -35,7 +32,6 @@ class IndexRoot extends Component {
         window.addEventListener("scroll", this.scrollNavigation, true);
     }
     
-    // Make sure to remove the DOM listener when the component is unmounted.
     componentWillUnmount() {
         window.removeEventListener("scroll",this.scrollNavigation, true);
     }
@@ -71,13 +67,12 @@ class IndexRoot extends Component {
             <React.Fragment>
                 <Suspense fallback = {this.Loader()} >
                     <Topbar/>
-                    <Home />
-                    <Demo />
-                    <Feature />
-                    <Reviews/>
+                    <Section />
+                <section className="section">
+                    <Main />
+                    <GettingStarted />    
+                </section>
                     <Footer />
-
-                    {/* scrollup button */}
           <ScrollUpButton ContainerClassName="classForContainer" style={{height:36, width:36}} TransitionClassName="classForTransition">
           <CustomDot/>
           </ScrollUpButton>

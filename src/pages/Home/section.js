@@ -1,36 +1,38 @@
-import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+    import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import { Col, Container, Row } from 'reactstrap';
+import bg1 from '../../assets/images/crypto/bg1.svg';
+import quiltApp from '../../assets/images/crypto/quiltApp.svg';
 
-// import images
-import startupSVG from '../../assets/images/illustrator/Startup_SVG.svg';
-
-class Section extends Component {
+export default class Section extends Component {
     render() {
         return (
             <React.Fragment>
-                <section className="bg-half-170 d-table w-100" id="home">
-                    <Container>
-                        <Row className="mt-5 align-items-center">
-                            <Col lg={7} md={7}>
-                                <div className="title-heading me-lg-4">
-                                    <h1 className="heading mb-3">Our Creativity Is Your <span className="text-primary">Success</span> </h1>
-                                    <p className="para-desc text-muted">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.</p>
-                                    <div className="mt-4">
-                                        <Link to="/page-contact-one" className="btn btn-primary mt-2 me-2"><i className="uil uil-envelope"></i> Get Started</Link>
-                                        <Link to="/documentation" className="btn btn-outline-primary mt-2"><i className="uil uil-book-alt"></i> Documentation</Link>
-                                    </div>
-                                </div>
-                            </Col>
-                            <Col lg={5} md={5} className="mt-4 pt-2 mt-sm-0 pt-sm-0">
-                                <img src={startupSVG} alt="" />
-                            </Col>
-                        </Row>
-                    </Container>
-                </section>
+                
+                <section className="bg-home d-flex align-items-center" style={{ background: `url(${bg1}) center `}}>
+                    
+            <Container>
+                <Row className="justify-content-center">
+                    <Col lg={7} xs={12}>
+                        <div className="title-heading text-left">
+                            <h4 className="heading fw-bold text-dark title-dark mb-3">Quilt is <span className='text-success'>secure</span> social trading and <span className='text-success'>messaging</span> application, built on blockchain</h4>
+                            <h5 className="para-desc mx-auto text-success title-dark">The Future of Social Media in your hands</h5>
+                            <div className="mt-4 pt-2 px-2 d-flex justify-content-left">
+                                <Link to="#" className="btn btn-success btn-pills">Sign Up</Link>
+                                <Link to="#" className="btn btn-light btn-pills">Sign In</Link>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col lg={5} xs={12} className="mt-4 pt-2 mt-sm-0 pt-sm-0">
+                <div className="text-md-end text-center ms-lg-4">
+                  <img src={quiltApp} className="img-fluid" alt="" />
+                </div>
+              </Col>
+                </Row>
+            </Container>
+            
+        </section>
             </React.Fragment>
-        );
+        )
     }
 }
-
-export default Section;
