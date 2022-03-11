@@ -1,0 +1,74 @@
+{
+  "name": "quilt",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@babel/runtime": "^6.23.0",
+    "@fortawesome/fontawesome-svg-core": "^1.3.0",
+    "@fortawesome/free-brands-svg-icons": "^6.0.0",
+    "@fortawesome/free-solid-svg-icons": "^6.0.0",
+    "@fortawesome/react-fontawesome": "^0.1.17",
+    "@iconscout/react-unicons": "^1.1.6",
+    "aos": "^2.3.4",
+    "availity-reactstrap-validation": "^2.7.1",
+    "babel": "^6.23.0",
+    "bootstrap": "^5.0.0-beta2",
+    "feather-icons-react": "^0.4.3",
+    "jsonp": "^0.2.1",
+    "node-sass": "^6.0.0",
+    "npm": "^7.13.0",
+    "number-counter": "^1.0.3",
+    "react": "^17.0.2",
+    "react-background-slider": "^2.0.0",
+    "react-countdown-now": "^2.1.2",
+    "react-countup": "^4.3.3",
+    "react-datepicker": "^3.8.0",
+    "react-dom": "^17.0.2",
+    "react-fade-in": "^2.0.1",
+    "react-flatpickr": "^3.10.7",
+    "react-icons": "^4.3.1",
+    "react-image-lightbox": "^5.1.1",
+    "react-mailchimp": "0.0.1",
+    "react-mailchimp-email-signup-form": "^2.0.2",
+    "react-mailchimp-form": "^1.0.2",
+    "react-mailchimp-subscribe": "^2.1.3",
+    "react-modal-video": "^1.2.6",
+    "react-parallax": "^3.3.0",
+    "react-player": "^2.9.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.0",
+    "react-scroll-up-button": "^1.6.4",
+    "react-slick": "^0.28.1",
+    "react-star-ratings": "^2.3.0",
+    "react-text-rotator": "^1.1.0",
+    "react-typist": "^2.0.5",
+    "reactstrap": "^8.9.0",
+    "slick-carousel": "^1.8.1",
+    "subscribe": "0.0.1-security"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gulp-sass": "^3.2.1",
+    "webpack": "^4.46.0"
+  }
+}

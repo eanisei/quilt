@@ -104,11 +104,11 @@ import SubscribeFrom from "react-mailchimp-subscribe";
                 lg="6"
                 md="6"
                 xs="12"
-                className="mt-4 mt-sm-0 pt-2 pt-sm-0"
+                className="align-items-center"
                 name="footercolumn"
               >
                   <div className="subcribe-form mt-4">
-                    <div className="mb-2 input-mailchimp mailchimp-btn subscribe-form">
+                    <div className="input-mailchimp mailchimp-btn subscribe-form">
                       <SubscribeFrom
                         url="https://chat.us14.list-manage.com/subscribe/post?u=63396c3932c39d351c5a97e14&id=5b38a1847d"
                       />
