@@ -36,7 +36,7 @@ class Topbar extends Component {
             </Link>
             <div className="buy-button">
               <a
-                href="https://quilt.chat"
+                href="https://app.quilt.chat"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-success btn-pills"
